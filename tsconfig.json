@@ -1,0 +1,21 @@
+{
+    "version": "1.4.1",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./Scripts/typings/angularjs/angular.d.ts",
+        "./Scripts/typings/jquery/jquery.d.ts",
+        "./example/app.ts",
+        "./src/switch.ts"
+    ]
+}

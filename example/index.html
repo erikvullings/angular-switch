@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html data-ng-app="SwitchExApp">
+
+<head>
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/angular.min.js"></script>
+    <script src="./switch.js"></script>
+    <script src="./app.js"></script>
+
+    <link rel="stylesheet" href="main.css"></link>
+    <link rel="stylesheet" href="switch.css"></link>
+</head>
+
+<body data-ng-controller="appCtrl" style="margin: 2%">
+    <h1>Angular Directive for a Windows style switch</h1>
+    <p>
+        Using only a minimal amount of code, you can create this Windows 8 style switch.
+        The switch itself is created using the free tool at <a href="https://proto.io/freebies/onoff/">proto.io</a>.
+    </p>
+
+    <div style="display: inline-block; width: 300px;">
+        <div ng-init="dis=false" class="pull-right">
+            <switch state="dis" textlabel="Disable other switch"></switch>
+        </div>
+        <div class="pull-right">
+            <switch state="vm.isSelected" textlabel="Is selected" isdisabled="{{dis}}"></switch>
+        </div>
+    </div>
+    <div>
+        <pre>
+            Is disabled: {{dis}}
+        </pre>
+        <pre>
+            Is selected: {{vm.isSelected}}
+        </pre>
+    </div>
+</body>
+</html>
