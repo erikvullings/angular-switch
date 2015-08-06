@@ -1,0 +1,27 @@
+{
+  "name": "angular-switch",
+  "version": "1.0.0",
+  "homepage": "https://github.com/erikvullings/angular-switch",
+  "authors": [
+    "Erik Vullings <erik.vullings@gmail.com>"
+  ],
+  "description": "A switch directive for Angular.js",
+  "main": "example/index.html",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "switch",
+    "directive",
+    "angular.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
