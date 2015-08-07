@@ -5,7 +5,7 @@ module Switch {
         textlabel: string;
         state: boolean;
         isdisabled: boolean;
-        // clicked: Function;// (state: boolean) => void;
+        switchChanged: Function;// (state: boolean) => void;
     }
 
     /**
@@ -39,13 +39,16 @@ module Switch {
                     /**
                      * if true, disable the switch
                      */
-                    isdisabled: '@'//,
-                    // clicked: '&'
+                    isdisabled: '@',
+                    /**
+                     * Called when the switch position is changed 
+                     */
+                    changed: '&'
                 },      // isolated scope, separated from parent.
                 template: '<div>' +
                         '<span class="textlabel">{{textlabel}}</span>' +
                         '<div class="onoffswitch">' +
-                            '<input type="checkbox" ng-model="state" class="onoffswitch-checkbox">' +
+                            '<input type="checkbox" ng-model="state" ng-change="changed()" class="onoffswitch-checkbox">' +
                             '<label class="onoffswitch-label">' +
                                 '<span class="onoffswitch-inner"></span>' +
                                 '<span class="onoffswitch-switch"></span>' +

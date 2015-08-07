@@ -16,12 +16,13 @@ var Switch;
                 scope: {
                     textlabel: '@',
                     state: '=',
-                    isdisabled: '@'
+                    isdisabled: '@',
+                    changed: '&'
                 },
                 template: '<div>' +
                     '<span class="textlabel">{{textlabel}}</span>' +
                     '<div class="onoffswitch">' +
-                    '<input type="checkbox" ng-model="state" class="onoffswitch-checkbox">' +
+                    '<input type="checkbox" ng-model="state" ng-change="changed()" class="onoffswitch-checkbox">' +
                     '<label class="onoffswitch-label">' +
                     '<span class="onoffswitch-inner"></span>' +
                     '<span class="onoffswitch-switch"></span>' +

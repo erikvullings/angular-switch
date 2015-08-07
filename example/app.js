@@ -7,6 +7,9 @@ var App;
             this.isSelected = true;
             $scope.vm = this;
         }
+        AppCtrl.prototype.select = function () {
+            console.log('Switch position changed.');
+        };
         AppCtrl.$inject = [
             '$scope'
         ];

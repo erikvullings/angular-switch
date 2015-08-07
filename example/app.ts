@@ -21,6 +21,10 @@ module App {
             ) {
             $scope.vm = this;
         }
+
+        select() {
+            console.log('Switch position changed.')
+        }
     }
 
     // Start the application
