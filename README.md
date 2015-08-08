@@ -38,10 +38,12 @@ The directive can work on both element and attribute levels. The following examp
 ```javascript
 <switch state="vm.isSelected" 
         textlabel="Switch" 
+        changed="vm.changed()"
         isdisabled="{{ isDisabled }}"></switch>
 ```
 * state: the switch state, i.e. true is on, or false when off.
 * textlabel: optional label that is placed in front of the switch
+* changed: action that will be called when the switch state has changed. Although you could add an ng-click to the switch control, that won't work properly, as the ng-click is fired twice (once for the label, once for the input checkbox) and the selection hasn't occured yet. So please use the changed event instead.
 * isdisabled: when true, disables the switch
 
 ## Example
