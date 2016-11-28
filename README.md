@@ -35,7 +35,7 @@ angular.module('yourModule', ['csComp'
 
 The directive can work on both element and attribute levels. The following example contains all of the supported attributes:
 
-```javascript
+```html
 <switch state="vm.isSelected" 
         textlabel="Switch" 
         changed="vm.changed()"
