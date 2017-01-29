@@ -1,5 +1,7 @@
 # angular-switch
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/484276e875024352a18511f6dd30c10f)](https://www.codacy.com/app/erikvullings/angular-switch?utm_source=github.com&utm_medium=referral&utm_content=erikvullings/angular-switch&utm_campaign=badger)
+
 A switch directive for Angular.js, based on an input checkbox and the css style generated at [proto.io]
 (https://proto.io/freebies/onoff). Please do not confuse this with project with another similar directive, [angular-bootstrap-switch](https://github.com/frapontillo/angular-bootstrap-switch). The main reasons for creating this version is that I needed a Windows type of switch. Additionally, I  found the angular-bootstrap-switch option rather difficult to setup, as I needed to install two bower packages, and it was rather big (~23kb minified js+css) compared to this version (~2kb minified js+css).
 
